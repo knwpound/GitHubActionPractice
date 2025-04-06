@@ -1,0 +1,218 @@
+[debug] [2025-04-06T09:27:50.640Z] ----------------------------------------------------------------------
+[debug] [2025-04-06T09:27:50.646Z] Command:       C:\Program Files\nodejs\node.exe C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-04-06T09:27:50.647Z] CLI Version:   14.1.0
+[debug] [2025-04-06T09:27:50.647Z] Platform:      win32
+[debug] [2025-04-06T09:27:50.647Z] Node Version:  v22.13.1
+[debug] [2025-04-06T09:27:50.648Z] Time:          Sun Apr 06 2025 16:27:50 GMT+0700 (เวลาอินโดจีน)
+[debug] [2025-04-06T09:27:50.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-06T09:27:50.656Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-04-06T09:27:51.090Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-06T09:27:51.091Z] > authorizing via signed-in user (6530005821@student.chula.ac.th)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\CP\se2\GitHubActionPractice
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-04-06T09:27:51.677Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-04-06T09:27:51.677Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-06T09:28:04.800Z] Using project from CLI flag: fireship-lessons
+[debug] [2025-04-06T09:28:04.802Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:28:04.802Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:28:04.803Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:28:04.804Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:28:04.805Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:28:04.955Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:28:04.956Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:28:04.956Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons [none]
+[debug] [2025-04-06T09:28:05.130Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons 401
+[debug] [2025-04-06T09:28:05.130Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-04-06T09:28:05.130Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-04-06T09:28:05.130Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:28:05.130Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:28:05.131Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:28:05.131Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:28:05.131Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:28:05.191Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:28:05.191Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:28:05.193Z] Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-04-06T09:28:05.310Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project fireship-lessons. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-04-06T09:28:18.353Z] ----------------------------------------------------------------------
+[debug] [2025-04-06T09:28:18.359Z] Command:       C:\Program Files\nodejs\node.exe C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js init emulators
+[debug] [2025-04-06T09:28:18.360Z] CLI Version:   14.1.0
+[debug] [2025-04-06T09:28:18.360Z] Platform:      win32
+[debug] [2025-04-06T09:28:18.360Z] Node Version:  v22.13.1
+[debug] [2025-04-06T09:28:18.361Z] Time:          Sun Apr 06 2025 16:28:18 GMT+0700 (เวลาอินโดจีน)
+[debug] [2025-04-06T09:28:18.361Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-06T09:28:18.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-06T09:28:18.731Z] > authorizing via signed-in user (6530005821@student.chula.ac.th)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\CP\se2\GitHubActionPractice
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-06T09:29:28.070Z] Using project from CLI flag: fireship-lessons
+[debug] [2025-04-06T09:29:28.072Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:29:28.072Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:29:28.073Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:29:28.076Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:29:28.076Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:29:28.298Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:29:28.298Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:29:28.299Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons [none]
+[debug] [2025-04-06T09:29:28.692Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons 401
+[debug] [2025-04-06T09:29:28.692Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-04-06T09:29:28.692Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-04-06T09:29:28.692Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:29:28.692Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:29:28.692Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:29:28.693Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:29:28.693Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:29:28.748Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:29:28.749Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:29:28.750Z] Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-04-06T09:29:28.882Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project fireship-lessons. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-04-06T09:31:14.086Z] ----------------------------------------------------------------------
+[debug] [2025-04-06T09:31:14.092Z] Command:       C:\Program Files\nodejs\node.exe C:\CP\se2\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-04-06T09:31:14.093Z] CLI Version:   14.1.0
+[debug] [2025-04-06T09:31:14.093Z] Platform:      win32
+[debug] [2025-04-06T09:31:14.093Z] Node Version:  v22.13.1
+[debug] [2025-04-06T09:31:14.094Z] Time:          Sun Apr 06 2025 16:31:14 GMT+0700 (เวลาอินโดจีน)
+[debug] [2025-04-06T09:31:14.094Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-06T09:31:14.534Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-06T09:31:14.535Z] > authorizing via signed-in user (6530005821@student.chula.ac.th)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-04-06T09:31:14.558Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-06T09:31:14.558Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-06T09:31:14.558Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-04-06T09:31:14.568Z] [hub] writing locator at C:\Users\pound\AppData\Local\Temp\hub-fireship-lessons.json
+[debug] [2025-04-06T09:31:14.598Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:14.599Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:14.599Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:31:14.604Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:31:14.604Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:14.747Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:31:14.747Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:14.747Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-lessons/sites 
+[debug] [2025-04-06T09:31:15.394Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-lessons/sites 401
+[debug] [2025-04-06T09:31:15.394Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-lessons/sites {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-04-06T09:31:15.395Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-04-06T09:31:15.395Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.395Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.395Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:31:15.395Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:31:15.396Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:15.447Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:31:15.448Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:15.448Z] Failed to list hosting sites
+[debug] Request to https://firebasehosting.googleapis.com/v1beta1/projects/fireship-lessons/sites had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-04-06T09:31:15.449Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.449Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.449Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:31:15.449Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:31:15.449Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:15.500Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:31:15.500Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:15.501Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons/webApps/-/config [none]
+[debug] [2025-04-06T09:31:15.893Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons/webApps/-/config 401
+[debug] [2025-04-06T09:31:15.893Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons/webApps/-/config {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-04-06T09:31:15.893Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-04-06T09:31:15.893Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.893Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.893Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:31:15.894Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:31:15.894Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:15.947Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:31:15.947Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:15.947Z] fetchWebSetup error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons/webApps/-/config had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[warn] !  hosting: Could not fetch web app configuration and there is no cached configuration on this machine. Check your internet connection and make sure you are authenticated. To continue, you must call firebase.initializeApp({...}) in your code before using Firebase. 
+[debug] [2025-04-06T09:31:15.950Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.950Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:15.950Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:31:15.951Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:31:15.951Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:16.002Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:31:16.002Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:16.003Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons [none]
+[debug] [2025-04-06T09:31:16.091Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons 401
+[debug] [2025-04-06T09:31:16.091Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-04-06T09:31:16.091Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-04-06T09:31:16.091Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:16.091Z] Checked if tokens are valid: false, expires at: 1715540919189
+[debug] [2025-04-06T09:31:16.091Z] > refreshing access token with scopes: []
+[debug] [2025-04-06T09:31:16.092Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-06T09:31:16.092Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:16.145Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-06T09:31:16.146Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-06T09:31:16.146Z] Request to https://firebase.googleapis.com/v1beta1/projects/fireship-lessons had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[info] i  hosting[fireship-lessons]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[fireship-lessons]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2025-04-06T09:31:16.190Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] "GET / HTTP/1.1" 200 385 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] \"GET / HTTP/1.1\" 200 385 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] "GET /favicon.ico HTTP/1.1" 200 385 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:09:32:17 +0000] \"GET /favicon.ico HTTP/1.1\" 200 385 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
