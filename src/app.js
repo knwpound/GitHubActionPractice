@@ -1,3 +1,5 @@
+import { app, analytics } from './firebase';
+
 const dayOfTheWeek = (date = new Date()) => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
